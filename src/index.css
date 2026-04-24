@@ -13,3 +13,21 @@
 .spin-slow {
     animation: spinSlow 50s linear infinite;
 }
+
+@keyframes floatRotate {
+    0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: translate(-15px, -15px) rotate(8deg) scale(1.05);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+}
+
+.float-rotate {
+    animation: floatRotate 8s ease-in-out infinite;
+}

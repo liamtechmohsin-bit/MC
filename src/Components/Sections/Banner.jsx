@@ -4,15 +4,15 @@ const Banner = ({ text }) => {
     return (
         <>
             <div
-                className="relative h-[170px] flex justify-center items-center"
-                style={{ backgroundImage: `url(${bgImg})`, backgroundSize: "cover", backgroundPosition: "center" }}
+                className="relative overflow-hidden w-full h-[170px] inset-0 bg-gradient-to-r from-[#74118C] to-[#1F0526] flex justify-center items-center"
             >
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#74118C] to-[#1F0526]">
+                <div className="absolute w-full h-full">
+                    <img src={bgImg} className='w-full h-full' alt="" />
                 </div>
 
                 {/* Content */}
-                <h1 className="relative z-10 text-white text-6xl">
+                <h1 className="relative z-10 text-white text-4xl md:text-6xl capitalize">
                     {text}
                 </h1>
             </div>
