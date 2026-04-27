@@ -1,23 +1,15 @@
-import React from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import { Outlet } from 'react-router'
-import Testimonial from '../Sections/Testimonial'
+import { Outlet } from "react-router";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const MainLayout = () => {
-    return (
-        <>
-            <Navbar />
-            <main>
-                <Outlet />
-            </main>
-            <div className='bg-gradient-to-b from-[#74118C] to-[#000]'>
-                <Testimonial />
-                <Footer />
-            </div>
+  return (
+    <>
+      <Header />
+      <Outlet />
+      <Footer />
+    </>
+  );
+};
 
-        </>
-    )
-}
-
-export default MainLayout
+export default MainLayout;

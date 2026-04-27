@@ -1,23 +1,22 @@
 import Banner from "../Components/Sections/Banner";
+import CareerForm from "../Components/Sections/CareerForm";
 import ChooseUs from "../Components/Sections/ChooseUs";
 import CTABanner from "../Components/Sections/CTABanner";
 import CrossMarquee from "../Components/Sections/Marquee";
-import ServiceGrid from "../Components/Sections/ServiceGrid";
-
-const Services = () => {
+const Career = () => {
   return (
     <div className="pt-20 md:pt-24">
-      <Banner text="Services" />
+      <Banner text="Career" />
       <div className="section-bg-layout">
         <div className="main-container">
-          <ServiceGrid />
+          <CareerForm />
           <CTABanner />
           <ChooseUs />
         </div>
-        <CrossMarquee/>
+        <CrossMarquee />
       </div>
     </div>
   );
 };
 
-export default Services;
+export default Career;
